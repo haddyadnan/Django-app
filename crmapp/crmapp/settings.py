@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 from django.core.exceptions import ImproperlyConfigured
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -31,13 +32,14 @@ ENV_ROLE = get_env_variable('ENV_ROLE')
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7s!_s0g6m!pd#s-yr#c#w%8bc3e4!#2apojc@t=-gs^*4t#t4('
+#..A
+SECRET_KEY = get_env_variable('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 #Set debug = True in development ..A
-if ENV_ROLE = 'development':
+if ENV_ROLE == 'development':
     DEBUG = True
 
 ALLOWED_HOSTS = []
