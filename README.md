@@ -1,2 +1,2 @@
 # Django-app
-Implementing ultimate django tutorial in django version 3
+Implementing ultimate django tutorial[https://ultimatedjango.com/] in django version 3
