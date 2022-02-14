@@ -1,2 +1,2 @@
 # Django-app
-Django App
+Implementing ultimate django tutorial in django version 3
