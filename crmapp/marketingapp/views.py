@@ -1,12 +1,13 @@
 from django.shortcuts import render
-from django.viws.generic.base import TemplateView
+from django.views.generic import TemplateView
 
 # Create your views here.
-class HomePage(TemplateView):
+##Not needed in the newer version of Django
+# class HomePage(TemplateView):
 
-    """
-    Docs
-    Template Name:
+#     """
+#     Docs
+#     Template Name:
     
-    """
-    template_name = 'marketing/home.html'
+#     """
+#     template_name = 'marketing/home.html'
